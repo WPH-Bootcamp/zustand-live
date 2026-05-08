@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import DemoAuth from "./demos/DemoAuth";
 import DemoTheme from "./demos/DemoTheme";
 
 type TabId = "theme" | "auth" | "selector" | "middleware" | "persist";
@@ -72,6 +73,7 @@ export default function App() {
         </div>
 
         {activeTab === "theme" && <DemoTheme />}
+        {activeTab === "auth" && <DemoAuth />}
       </main>
 
       <footer className="bg-white border-t mt-12">
